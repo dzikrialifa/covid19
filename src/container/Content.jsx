@@ -1,6 +1,6 @@
-import React,{Component} from 'react';
+import React from 'react';
 
-export default class Content extends Component {
+export default class Content extends React.Component {
 
     state = {
         dataIndonesia: [{}]
