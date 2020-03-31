@@ -1,7 +1,7 @@
-import React,{Component} from 'react';
+import React from 'react';
 import ListHotline from '../components/ListHotline';
 
-export default class Hotline extends Component {
+export default class Hotline extends React.Component {
 
     state = {
         Data: [
