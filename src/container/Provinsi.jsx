@@ -1,6 +1,6 @@
-import React,{Component} from 'react';
+import React from 'react';
 
-export default class Provinsi extends Component {
+export default class Provinsi extends React.Component {
 
     state = {
         listProvinsi: []
@@ -21,13 +21,13 @@ export default class Provinsi extends Component {
                 <div className="row">
                     <div className="col-lg col-md mx-auto bg-white rounded shadow">
                         <div className="table-responsive">
-                            <table className="table table-fixed">
+                            <table className="table table-hover">
                                 <thead>
                                     <tr>
                                         <th scope="col" className="col- col-lg-2">#</th>
                                         <th scope="col" className="col- col-lg-4">Provinsi</th>
-                                        <th scope="col" className="col- col-lg-2">Positif</th>
-                                        <th scope="col" className="col- col-lg-2">Sembuh</th>
+                                        <th scope="col" className="col- col-lg-2">Kasus Positif</th>
+                                        <th scope="col" className="col- col-lg-2">Kasus Sembuh</th>
                                         <th scope="col" className="col- col-lg-2">Meninggal</th>
                                     </tr>
                                 </thead>
@@ -35,11 +35,11 @@ export default class Provinsi extends Component {
                                     {this.state.listProvinsi.map((data, index) => {
                                         return (
                                             <tr key={data.attributes.FID}>
-                                                <th scope="row" className="col-2" key={data.attributes.FID}>{index + 1}</th>
-                                                <td className="col-4">{data.attributes.Provinsi}</td>
-                                                <td className="col-3 text-center">{data.attributes.Kasus_Posi}</td>
-                                                <td className="col-2 text-center">{data.attributes.Kasus_Semb}</td>
-                                                <td className="col-2 text-center">{data.attributes.Kasus_Meni}</td>
+                                                <th scope="row" className="col- col-lg-2" key={data.attributes.FID}>{index + 1}</th>
+                                                <td className="col- col-lg-4">{data.attributes.Provinsi}</td>
+                                                <td className="col- col-lg-2 text-center">{data.attributes.Kasus_Posi}</td>
+                                                <td className="col- col-lg-2 text-center">{data.attributes.Kasus_Semb}</td>
+                                                <td className="col- col-lg-2 text-center">{data.attributes.Kasus_Meni}</td>
                                             </tr>
                                         )
                                     })}
