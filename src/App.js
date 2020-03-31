@@ -3,57 +3,57 @@ import Navbar from './container/Navbar';
 import Content from './container/Content';
 import Provinsi from './container/Provinsi';
 import Footer from './container/Footer';
-import Hotline from './container/Hotline';
+import Hotlines from './container/Hotline';
 import './App.css';
 
 import { BrowserRouter as Router,Switch, Route } from 'react-router-dom';
 
 export default function App ()  {
   return(
-    <div>
+    <>
     <Router>
       <Switch>
         <Route exact path="/"><Home/></Route>
-        <Route path="/provinsi"><Prov/></Route>
-        <Route path="/hotline"><Hot/></Route>
+        <Route path="/provinsi"><Province/></Route>
+        <Route path="/hotline"><Hotline/></Route>
         <Route path="/contact"><Contact/></Route>
       </Switch>
     </Router>
-    </div>
+    </>
   )
 }
 const Home = () => {
   return(
-    <div>
+    <>
       <Navbar/>
       <Content/>
       <Footer/>
-    </div>
+    </>
   )
 }
-const Prov = () => {
+const Province = () => {
   return(
-    <div>
+    <>
       <Navbar/>
       <Provinsi/>
       <Footer/>
-    </div>
+    </>
   )
 }
-const Hot = () => {
+const Hotline = () => {
   return(
-    <div>
+    <>
       <Navbar/>
-      <Hotline/>
+      <Hotlines/>
       <Footer/>
-    </div>
+    </>
   )
 }
 const Contact = () => {
   return(
-    <div>
+    <>
       <Navbar/>
       <Footer/>
-    </div>
+    </>
   )
 }
