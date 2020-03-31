@@ -1,6 +1,6 @@
-import React,{Component} from 'react';
+import React from 'react';
 
-export default class Footer extends Component {
+export default class Footer extends React.Component {
     state = {
         date : new Date(),
         month: ['Januari','Februari','Maret','April','Mei','Juni','Agustus','September','Oktober','November','Desember']
