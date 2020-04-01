@@ -12,17 +12,17 @@ export default class Navbar extends React.Component {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item active">
+                            <li className="nav-item active pr-3">
                                 <Link to="/" className="nav-link">Dashboard <span className="sr-only">(current)</span></Link>
                             </li>
-                            <li className="nav-item ml-5">
+                            <li className="nav-item ml-5 pr-3">
                                 <Link to="/provinsi" className="nav-link">Provinsi</Link>
                             </li>
                             <li className="nav-item ml-5">
-                                <Link to="/hotline" className="nav-link">Hotline Corona</Link>
+                                <Link to="/global" className="nav-link">Data Global</Link>
                             </li>
                             <li className="nav-item ml-5">
-                                <Link to="/contact" className="nav-link">Contact</Link>
+                                <Link to="/hotline" className="nav-link">Hotline Corona</Link>
                             </li>
                         </ul> 
                     </div>
