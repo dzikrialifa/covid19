@@ -9,7 +9,7 @@ export default class Hotline extends React.Component {
             {id:2,name: "Pemprov DKI Jakarta", telp: "0813-8837-6955"},
             {id:3,name: "Pemprov Jawa Barat", telp: "0811-209-3306"},
             {id:4,name: "Pemrov Jawa Tengah", telp: "0823-1360-0560"},
-            {id:5,name: "Pemprov DIY", telp: "0274-555-585"},
+            {id:5,name: "Pemprov D.I Yogyakarta", telp: "0274-555-585"},
             {id:6,name: "Pemprov Jawa Timur", telp: "031-843-0313"}
             // {id:7,name: "bali", telp: "31233"},
             // {id:8,name: "kalteng", telp: "12333"},
@@ -24,7 +24,7 @@ export default class Hotline extends React.Component {
         let columns = [];
         this.state.Data.forEach((item,index) => {
             columns.push(
-                <div className="col-md-3 py-2" style={{ clear: (index !== 0 && index % 4 === 0) ? 'both' : 'none' }} key={item.id}>
+                <div className="col-md-4 py-2" style={{ clear: (index !== 0 && index % 4 === 0) ? 'both' : 'none' }} key={item.id}>
                     <ListHotline key={item.id} name={item.name} telp={item.telp} />
                 </div>)
         })
