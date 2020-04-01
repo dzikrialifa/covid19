@@ -4,6 +4,7 @@ import Content from './container/Content';
 import Provinsi from './container/Provinsi';
 import Footer from './container/Footer';
 import Hotlines from './container/Hotline';
+import Global from './container/Global';
 import './App.css';
 
 import { BrowserRouter as Router,Switch, Route } from 'react-router-dom';
@@ -16,7 +17,7 @@ export default function App ()  {
         <Route exact path="/"><Home/></Route>
         <Route path="/provinsi"><Province/></Route>
         <Route path="/hotline"><Hotline/></Route>
-        <Route path="/contact"><Contact/></Route>
+        <Route path="/global"><Globals/></Route>
       </Switch>
     </Router>
     </>
@@ -49,10 +50,11 @@ const Hotline = () => {
     </>
   )
 }
-const Contact = () => {
+const Globals = () => {
   return(
     <>
       <Navbar/>
+      <Global/>
       <Footer/>
     </>
   )
