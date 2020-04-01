@@ -17,7 +17,7 @@ export default class Provinsi extends React.Component {
     render() {
         return(
             <div className="container" style={{marginTop:"80px"}}>
-                <h1 className="text-primary text-center text-capitalize mb-5">Daftar kasus virus corona di provinsi</h1>
+                <h1 className="text-primary text-center text-capitalize mb-5">Daftar kasus virus corona di provinsi indonesia</h1>
                 <div className="row">
                     <div className="col-lg col-md mx-auto bg-white rounded shadow">
                         <div className="table-responsive">
